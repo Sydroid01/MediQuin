@@ -2,14 +2,6 @@
 
 Full-stack version of the CCSFEN1L prototype by Firewall Benders.
 
-**React (Vite)** front end + **Node.js / Express** API + **MongoDB** database.
-Everything you do (requests, approvals, unit status, **repair requests, equipment inventory**, employees, audit log) is now saved in MongoDB, so it is still there after a reload, a server restart or a computer restart. Your sign-in also survives a reload.
-
-```
-Browser (React)  --/api-->  Express server  -->  MongoDB
-   port 5173 (dev)            port 4000           port 27017
-```
-
 ---
 
 ## Step-by-step setup
