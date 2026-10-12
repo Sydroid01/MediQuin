@@ -1,0 +1,11 @@
+# Optional: runs MongoDB in Docker so you don't have to install it.  Start it with:  docker compose up -d
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:27017:27017"      # only reachable from your own computer
+    volumes:
+      - mongo-data:/data/db           # your data survives restarts
+volumes:
+  mongo-data:
